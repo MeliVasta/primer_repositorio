@@ -1,6 +1,6 @@
+
 * {
-    margin: 0;
-    padding: 0;
+    margin-top: 0 !important;
 }
 
 @font-face {
@@ -13,345 +13,90 @@ a {
 }
 
 body {
-    background-color: #fff4c4;
     overflow-x: hidden;
+    background-color: #fbab60 !important;  
 }
 
 /* navegador + footer */
 /* navegador */
-/*
-@media only screen and (max-widht: 2600px){
-*/
-/*
-@media only screen and (min-width: 320px) and (max-widht: 968px) {
-    .navegacion {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
 
-    .navegacionLogo {
-        grid-area: 1 / 1 / 3 / 2;
-    }
+nav{
+    padding-top: 0% !important;
+    padding-bottom:0 !important; 
+}
 
-    .navegacionTitulo {
-        grid-area: 1 / 2 / 2 / 4;
-    }
-
-    .navegacionBotones {
-        grid-area: 2 / 2 / 3 / 4;
-    }
-
-
-    .navegacion {
-        background-color: #c71916;
-        font-family: "BebasNeue-Regular";
-        text-decoration: none;
-        display: flex;
-        border-bottom: 2px black solid;
-        align-content: flex-start;
-        justify-content: center;
-        width: 100vw;
-        height: 15vh;
-    }
-
-    .navegacionPrimero {
-        display: block;
-        padding: 0;
-    }
-
-    .navegacionLogo {
-        width: 120%;
-        height: 80%;
-        vertical-align: left;
-        margin-top: 10%;
-    }
-
-    .navegacionTitulo {
-        color: white;
-        font-style: italic;
-        font-size: 10%;
-        letter-spacing: 1.5px;
-        margin-top: 1.5%;
-    }
-
-    .navegacionBotones {
-        list-style: none;
-        font-weight: lighter;
-        text-align: left;
-        margin-top: 7%;
-        display: flex;
-        font-size: 20px;
-    }
-
-    .navegacionBotones li a {
-        padding: 3px;
-        color: white;
-    }
-
-
-
-
-    /* fin navegador */
-
-
-
-
-@media only screen and (min-widht: 480px) {
-
-.navegacion {
-    display: grid;
-    grid-template-columns: repeat(3, .3fr);
-    grid-template-rows: repeat(2, .5fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .navegacionPrimero { grid-area: 1 / 1 / 3 / 2; }
-    .navegacionSegundo { grid-area: 1 / 2 / 2 / 4; }
-    .navegacionTercero { grid-area: 2 / 2 / 3 / 4; }
-
-.navegacion {
-    background-color: #c71916;
-    font-family: "BebasNeue-Regular";
-    text-decoration: none;
+.detallesNav {
     border-bottom: 2px black solid;
-    height: 12vh;
-    justify-content: left;
+    background-color: #c71916;;
 }
 
-.navegacionPrimero {
-    vertical-align: center;
-    margin-top: 2%;
-    margin-left: 2%;
-}
-.navegacionPrimero img{
-    width: 70px;
-    height: 55px;
+.detallesNav img {
+    width: 20%;
+    height: 27%;
+
 }
 
-.navegacionSegundo{
-    color: white;
-    font-style: italic;
-    font-size: 105%;
-    letter-spacing: 1.5px;
-    display: inline;
+.nav-item{
+    color:white;
 }
 
-
-.navegacionTercero{
-    text-align: center;
-    position: absolute;
-    list-style: none;
-    font-weight: lighter;
-    text-align: left;
-    display: inline-flex;
-    font-size: 10px;
-}
-
-.navegacionTercero li a {
-    padding: 3px;
-    color: white;
-    text-decoration: none;
-}
-
-/* fin navegador */
-
+/* fin nav*/
 
 
 /* footer */
-.PDP {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: .1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
-}
 
-.PDP {
-    position: relative;
-    align-content: flex-end;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+footer {
     background-color: #c71916;
     color: white;
     font-family: "BebasNeue-Regular";
     letter-spacing: 1px;
     border-top: 2px black solid;
-    margin-top: 140px;
-    height: 12vh;
-    width: 100vw;
+}
+.boom{
+    font-weight: bolder;
+    margin-left: 2px;
 }
 
-.PDPTitulo {
-    font-size: 20px;
-    font-weight: lighter;
-    font-style: italic;
-    text-align: left;
-    margin-top: 0.5%;
-}
-
-
-.pieDePagina a img {
-    width: 15px;
-    height: 15px;
+footer a img {
+    width: 7%;
+    height: 15%;
     display: inline;
     padding: .2px;
-}
-
-.PDPDatos{
-    margin-right: 10px;
-}
-
-.PDPDatos p {
-    text-align: right;
-    font-weight: lighter;
-    font-size: 1px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    word-spacing: 1.5px;
-    line-height: 10px;
-}
-
-/*fin footer*/
-
-
-/*pagina HOME */
-/* slider */
-
-.container {
-    margin: 0;
-    padding: 0%;
-    background-color: white;
-    width: 100vw;
-    height: 10vh;
-    display: inline-block;
-    position: relative;
     align-items: center;
 }
 
-.container ul li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline;
+
+footer p {
+    text-align: right;
+    font-weight: lighter;
+    word-spacing: 1px;
+    line-height: 10%;
+    font-size: 10px;
 }
 
-.slider {
-    max-width: 300%;
-    display: block;
-    height: 10%;
-    width: 10%;
+.footerDtos{
+    padding: 10px;
+}
+/*fin footer*/
+
+/*mensaje bienvenida*/
+
+.bienvenida{
+    margin:1px; 
+    padding: 10px;
+    font-weight: bolder; 
 }
 
-ul.slider {
-    position: relative;
-    width: 60px;
-    height: 60px;
-}
+/*fin mensaje bienvenida*/ 
 
-ul.slider li {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity 0.5;
-    background-color: white;
-}
 
-ul.slider li img {
-    width: 100vw;
-    height: 80vh;
-    object-fit: cover;
-}
 
-ul.slider li:first-child {
-    opacity: 1;
-}
 
-ul.slider li:target {
-    opacity: 1;
-}
 
-/* fin de slider */
 
-/* botones del slider */
-
-.botonesSlider {
-    position: absolute; 
-    display: flex;
-    align-items: flex-end;
-    margin-left: 41%;
-    margin-top: 60%;
-}
-
-.botonesSlider li {
-    display: inline-block;
-    text-align: center;
-    position: center;
-}
-
-.botonesSlider li a {
-    display: inline-block;
-    background-color: #cbcbcb;
-    padding: 2px;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    margin: 2px;
-}
-
-/*fin botones slider*/
-
-/*index*/
-
-.extraSlider {
-    font-family: "BebasNeue-Regular";
-    position: relative;
-    width: 100%;
-    height: 150%;
-    display: flex;
-    margin-top: 30%;
-}
-
-.PPBotones {
-    margin-bottom: 0;
-    position: absolute;
-    display: inline-block;
-    align-content: center;
-    margin-left: 40%;
-    margin-top: 45%;
-}
-
-.PPTexto h1 {
-    position: absolute;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    font-size: 250%;
-    word-spacing: 5px;
-    width: 90vw;
-    height: 25vh;
-    margin-left: 2.9%;
-}
-
-/*estilo de titulos */
-.tituloPagina {
-    font-size: 400%;
-    font-style: italic;
-    color: #c71916;
-    font-weight: bold;
-    margin-top: 2%;
-}
-
-/*fin estilos titulo */
 
 /*botones*/
+/*
 .botones {
     text-decoration: none;
     background-color: #c71916;
@@ -373,286 +118,6 @@ ul.slider li:target {
     letter-spacing: 2px;
     text-align: center;
 }
-}
+*/
 /*finaliza botones 
 
-
-/* fin pagina principal */
-
-
-@media only screen and (min-widht: 481px) and (max-width: 968px) {
-    body {
-        background-color: blue ;
-        }
-    }
-
-
-    @media only screen and (min-widht: 969px) {
-        body {
-            background-color: red            }
-        }
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* pagina menu */
-.menu {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 9px;
-    grid-row-gap: 0px;
-}
-
-.burger1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.burger2 {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.burger3 {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-.burger4 {
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-.burger5 {
-    grid-area: 1 / 5 / 2 / 6;
-}
-
-.burger6 {
-    grid-area: 1 / 6 / 2 / 7;
-}
-
-.burger7 {
-    grid-area: 1 / 7 / 2 / 8;
-}
-
-.menu img {
-    width: 15vw;
-    height: 20vh;
-}
-
-main {
-    margin: 0;
-    justify-content: center;
-    display: block;
-}
-
-
-
-
-
-
-
-
-/*pagina promociones */
-
-.paginaPromociones {
-    font-family: "BebasNeue-Regular";
-    display: inline;
-}
-
-.promociones {
-    text-align: center;
-    margin-top: 2%;
-    letter-spacing: 1px;
-    font-weight: lighter;
-}
-
-
-.promociones h6 {
-    font-size: 150%;
-}
-
-.promocionesCuadrados {
-    display: flex;
-    align-items: center;
-    margin-left: 0.1%;
-    margin-top: 2%;
-}
-
-.promocionesCuadrados img {
-    width: 30vw;
-    height: 95vh;
-    display: inline-block;
-    position: center;
-    box-shadow: 5px 8px 15px black;
-}
-
-.promocionesCuadrados p {
-    position: relative;
-    display: inline;
-    color: #c71916;
-    font-size: 3rem;
-    text-align: center;
-    margin: auto;
-}
-
-.botonPromociones {
-    align-items: center;
-    margin-top: 10%;
-    margin-left: 10%;
-}
-
-/* finaliza pagina promociones */
-
-
-
-/* comienza pagina novedades */
-
-.paginaNovedades {
-    font-family: "BebasNeue-Regular";
-    display: inline;
-}
-
-.novedades {
-    text-align: center;
-    letter-spacing: 1px;
-    font-weight: lighter;
-}
-
-.novedadesCuadrados {
-    display: flex;
-    align-items: right;
-    padding: 2%;
-}
-
-.novedades img {
-    height: 27vw;
-    width: 40vw;
-}
-
-
-.novedades1,
-.novedades2 {
-    margin-right: 2.5%;
-    margin-left: 2.5%;
-    background-color: #fdeda2;
-    width: 150%;
-    padding: 2%;
-    text-align: center;
-    border: #c71916 1px dotted;
-}
-
-.novedades1 h4,
-.novedades2 h4 {
-    font-size: 30px;
-    font-style: italic;
-    margin-top: 1%;
-    color: #c71916;
-}
-
-.novedades1 p,
-.novedades2 p {
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.cierreNovedades {
-    text-align: center;
-    margin-left: 1%;
-    margin-top: 4%;
-    font-size: 25px;
-}
-
-.botonesNovedades {
-    margin-left: 20%;
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
-
-/* pagina CONTACTO*/
-
-.paginaContacto {
-    /*display: inline-block;*/
-    font-family: "BebasNeue-Regular";
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-.formulario {
-    background-color: #fdeda2;
-    padding: auto;
-    margin: 1%;
-    position: center;
-    background-size: auto;
-    width: 50%;
-    margin-left: 25%;
-}
-
-.formularioArriba {
-    display: inline;
-    padding: 1%;
-    position: center;
-    max-width: 100%;
-}
-
-.formularioArriba input,
-option {
-    padding: 5px;
-    margin: 0.5%;
-}
-
-.formularioArriba p,
-label,
-div {
-    font-size: 20px;
-    font-weight: lighter;
-    padding-left: 1%;
-}
-
-.botonesFormulario {
-    margin-top: 2%;
-}
-
-.botonesFormulario input {
-    background-color: #c71916;
-    color: white;
-    text-decoration: none;
-    height: auto;
-    width: auto;
-    border-color: #d8d8d8;
-    border-width: 2px;
-    border-collapse: separate;
-    border-style: solid;
-    border-radius: 10%;
-    font-family: "BebasNeue-Regular";
-    letter-spacing: 0.7px;
-    font-weight: lighter;
-    font-size: 10px;
-    text-align: center;
-}
-
-/*fin formulario */
