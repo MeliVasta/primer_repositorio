@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/logo-boom.png">
+    <link rel="shortcut icon" href="../img/logo-boom.png">
     <title>Novedades - Boom Burger</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,101 +13,118 @@
 </head>
 
 <body>
-    <!-- logo + nav -->
-    <header class="navegacion">
-        <div class="navegacionPrimero">
-            <img src="../img/logo-boom.png" alt="logo" class="navegacionLogo">
-        </div>
-        <nav>
-            <ul class="navegacionBotones">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/menu.html">Menu</a></li>
-                <li><a href="../pages/promociones.html">Promociones</a></li>
-                <li><a href="#novedades">Novedades</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <!--navegador-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid detallesNav align-items-left">
+                <a class="navbar-brand text-left  text-light" href="../index.html">
+                    <img src="../img/logo-boom.png" alt="Logo Boom Burger" class="d-inline-block align-text-top">
+                    Boom Burger
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active   text-light" aria-current="page"
+                                href="../pages/menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../pages/promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <div class="navegacionPrimero">
-            <h2 class="navegacionTitulo">BOOM BURGER </h2>
-        </div>
+        </nav>
     </header>
-    <!--finaliza logo + nav-->
+    <!--fin navegador-->
 
 
-    <!-- comienza novedades-->
-    <section class="paginaNovedades">
-        <!--articulo 1-->
-        <article class="novedades">
-            <h3 class="tituloPagina">NOVEDADES</h3>
-            <div class="novedadesCuadrados">
-                <div class="novedades1">
-                    <img src="../img/novedadesAniversario.png"
-                        alt="hamburguesa con velita de cumpleaños resprentando nuestro proximo cumpleaños">
-                    <h4>¡PROXIMAMENTE LLEGA NUESTRO PRIMER ANIVERSARIO!</h4>
-                    <p>El día Viernes 13 de Mayo del 2022 se llevará a cabo <br> nuestro primer cumpleaños y queremos
-                        festejarlo
-                        <br>de la mejor manera!</p>
-                </div>
-                <!--fin articulo 1-->
-
-                <!-- articulo 2-->
-                <div class="novedades2">
-                    <img src="../img/novedadesCrispy.png" alt="hamburguesa crispy boom">
-                    <h4>¡YA LLEGO LA CRIPY BOOM A NUESTRO MENU!</h4>
-                    <p>¿Todavia no probaste nuestra nueva hamburguesa?</p>
-                </div>
-                <!--fin articulo 2-->
-            </div>
-        </article>
-
-
-        <div class="cierreNovedades">
-            <p>Te recomendamos empezar a seguirnos en Instagram o Facebook o registrate para estar al tanto de
-                sorteos,
-                premios y MUCHO MAS!</p>
-        </div>
-    </section>
-
-    <div class="botonesNovedades">
-        <!--boton a fb-->
-        <button class="botones">
-            <a href="https://www.facebook.com/boomburger.itu">Seguinos en Facebook</a>
-        </button>
-
-        <!--boton a ig-->
-        <button class="botones">
-            <a href="https://www.instagram.com/boomburger.itu/?hl=es-la">Seguinos en Instagram</a>
-        </button class="botones">
-
-        <!--boton contacto-->
-        <button class="botones">
-            <a href="../pages/contacto.html">Registrate aquí</a>
-        </button>
+    <!--seccion novedades-->
+    <section>
+    <div class="bienvenida d-grid  mx-auto">
+        <p class="h1 text-center text-light container-fluid align-items-center">NOVEDADES</p>
     </div>
-
-
-
-    <!--comienza footer-->
-    <footer>
-        <div class="PDP">
-            <h6 class="PDPTitulo">Boom Burger</h6>
-            <div class="pieDePagina">
-                <a href="https://wa.link/d1zd1e"><img src="../img/whatsapp.png" alt="logo WhatsApp"></a>
-                <a href="https://www.instagram.com/boomburger.itu/?hl=es-la"><img src="../img/instagram.png"></a>
-                <a href="https://www.facebook.com/boomburger.itu"><img src="../img/facebook.png"></a>
-            </div>
-            <div class="PDPDatos">
-                <p>11-2289-3830</p>
-                <p>@boomburger.itu</p>
-                <p>Ituzaingó, Buenos Aires.</p>
+    <div class="row row-cols-2 novedades tarjetasNovedades">
+        <div class="col">
+            <!--aniversario-->
+            <div class="card text-center border-danger">
+                <img src="../img/novedadesAniversario.png" class="card-img-top"
+                    alt="hamburguesa con velita de cumpleaños resprentando nuestro proximo cumpleaños">
+                <div class="card-body">
+                    <h5 class="card-title h2">¡PROXIMAMENTE LLEGA NUESTRO PRIMER ANIVERSARIO!</h5>
+                    <p class="card-text">El día Viernes 13 de Mayo del 2022 se llevará a cabo nuestro primer cumpleaños
+                        y queremos
+                        festejarlo de la mejor manera!</p>
+                </div>
             </div>
         </div>
-    </footer>
-    <!--finaliza el footer-->
+        <!--nueva cripy boom-->
+        <div class="col">
+            <div class="novedades2">
+                <div class="card text-center border-danger">
+                    <img src="../img/novedadesCrispy.png" class="card-img-top" alt="crispy boom">
+                    <div class="card-body">
+                        <h5 class="card-title h2">¡YA LLEGO LA CRIPY BOOM A NUESTRO MENU!</h5>
+                        <p class="card-text">¿Todavia no probaste nuestra nueva hamburguesa?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+
+        <!--botones-->
+            <div class="bienvenida d-grid gap-2 col-12 mx-auto text-center">
+                <a href="https://www.facebook.com/boomburger.itu" aria-current="page">
+                    <button type="button" class="btn btn-danger btn-primary">Seguinos en Facebook
+                    </button>
+                </a>
+
+                <a href="https://www.instagram.com/boomburger.itu/?hl=es-la" aria-current="page">
+                    <button type="button" class="btn btn-danger btn-primary">Seguinos en Instagram
+                    </button>
+                </a>
+
+                <a href="../pages/contacto.html" aria-current="page">
+                    <button type="button" class="btn btn-danger btn-primary">Registrate aquí
+                    </button>
+                </a>
+            </div>
+
+
+
+
+            <!--comienza footer-->
+            <footer class="row align-items-center">
+                <div class="col boom ">
+                    Boom Burger
+                </div>
+                <div class="col">
+                    <a href="https://wa.link/d1zd1e"><img src="../img/whatsapp.png" alt="logo WhatsApp"></a>
+                    <a href="https://www.instagram.com/boomburger.itu/?hl=es-la"><img src="../img/instagram.png"></a>
+                    <a href="https://www.facebook.com/boomburger.itu"><img src="../img/facebook.png"></a>
+                </div>
+                <div class="col footerDatos">
+                    <p>11-2289-3830</p>
+                    <p>@boomburger.itu</p>
+                    <p>Ituzaingó, Buenos Aires.</p>
+                </div>
+        </div>
+        <!--finaliza el footer-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/logo-boom.png">
+    <link rel="shortcut icon" href="../img/logo-boom.png">
     <title>Promociones - Boom Burger</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,90 +13,117 @@
 </head>
 
 <body>
-    <!-- logo + nav -->
-    <header class="navegacion">
-        <div class="navegacionPrimero">
-            <img src="../img/logo-boom.png" alt="logo" class="navegacionLogo">
-        </div>
-        <nav>
-            <ul class="navegacionBotones">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/menu.html">Menu</a></li>
-                <li><a href="#promociones">Promociones</a></li>
-                <li><a href="../pages/novedades.html">Novedades</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="navegacionPrimero">
-            <h2 class="navegacionTitulo">BOOM BURGER </h2>
-        </div>
-    </header>
-    <!--finaliza logo + nav-->
-
-
-    <!-- comienza promociones-->
-    <section class="paginaPromociones">
-        <article class="promociones">
-            <h3 class="tituloPagina">¡GRANDES PROMOCIONES DEL MES DE MAYO!</h3>
-            <h6>No te quedes sin tu promo del mes</h6>
-            <div class="promocionesCuadrados">
-                <!--promo jueves-->
-                <div>
-                    <img src="../img/promoJueves.png"
-                        alt="¡¡promocion del mes de Mayo dia Jueves, no te quedes sin comer unas ricas hamburguesas">
-                    <p>JUEVES</p>
-                </div>
-
-                <!--promo domingos-->
-                <div>
-                    <img src="../img/promoDomingo.png"
-                        alt="¡¡promocion del mes de Mayo dia Jueves, no te quedes sin comer unas ricas hamburguesas">
-                    <p>DOMINGOS</p>
-                </div>
-
-                <!--promo martes-->
-                <div>
-                    <img src="../img/promoMartes.png"
-                        alt="¡¡promocion del mes de Mayo dia Jueves, no te quedes sin comer unas ricas hamburguesas">
-                    <p>MARTES</p>
+    <header>
+        <!--navegador-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid detallesNav align-items-left">
+                <a class="navbar-brand text-left  text-light" href="../index.html">
+                    <img src="../img/logo-boom.png" alt="Logo Boom Burger" class="d-inline-block align-text-top">
+                    Boom Burger
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active   text-light" aria-current="page" href="../pages/menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../pages/novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </article>
-        <!--fianliza promos-->
+        </nav>
+        </nav>
+    </header>
+    <!--fin navegador-->
+
+    <!-- comienza promociones-->
+    <section>
+        <div class="bienvenida d-grid gap-2 col-12 mx-auto">
+            <p class="h1 text-center text-light container-fluid align-items-center">PROMOCIONES</p>
+            <h6 class="display-6 text-center text-light container align-items-center">¡No te quedes sin tu promo del
+                mes!</h6>
+        </div>
+
+        
+
+        <div class="row row-cols-1 row-cols-md-3 g-2 tarjetasPromos text-danger text-center align-items-center">
+            <div class="col">
+                <div class="card">
+                    <img src="../img/promoJueves.png" class="card-img-top"
+                        alt="¡¡promocion del mes de Junio dia Jueves, no te quedes sin comer unas ricas hamburguesas!!">
+                    <div class="card-body">
+                        <h5 class="card-title">PROMO JUEVES</h5>
+                        <p class="card-text">Promoción válida solo los días Jueves.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../img/promoDomingo.png" class="card-img-top"
+                        alt="¡¡promocion del mes de Junio dia Domingo, no te quedes sin comer unas ricas hamburguesas!!">
+                    <div class="card-body">
+                        <h5 class="card-title">PROMO DOMINGO</h5>
+                        <p class="card-text">Promoción válida solo los días Domingo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../img/promoMartes.png" class="card-img-top"
+                        alt="¡¡promocion del mes de Junio dia Martes, no te quedes sin comer unas ricas hamburguesas!!">
+                    <div class="card-body">
+                        <h5 class="card-title">PROMO MARTES</h5>
+                        <p class="card-text">Promoción válida solo los días Martes.</p>
+                    </div>
+                </div>
+            </div>
 
 
 
-        <!--invitacion a novedades-->
-        <aside class="botonPromociones">
-            <button class="botones">
-                <a href="../pages/novedades.html">Te inivtamos a conocer nuestra seccion de NOVEDADES para enterarte de
-                    las últimas noticias</a>
-            </button>
-        </aside>
+
+            <!--invitacion a novedades-->
+            <div class="bienvenida d-grid gap-2 col-12 mx-auto text-center">
+                <a href="../pages/novedades.html" aria-current="page">
+                    <button type="button" class="btn btn-danger btn-primary ">Te invitamos a pasar por nuestra seccion
+                        NOVEDADES
+                    </button>
+                </a>
+            </div>
     </section>
 
 
     <!--comienza footer-->
-    <footer>
-        <div class="PDP">
-            <h6 class="PDPTitulo">Boom Burger</h6>
-            <div class="pieDePagina">
-                <a href="https://wa.link/d1zd1e"><img src="../img/whatsapp.png" alt="logo WhatsApp"></a>
-                <a href="https://www.instagram.com/boomburger.itu/?hl=es-la"><img src="../img/instagram.png"></a>
-                <a href="https://www.facebook.com/boomburger.itu"><img src="../img/facebook.png"></a>
-            </div>
-            <div class="PDPDatos">
-                <p>11-2289-3830</p>
-                <p>@boomburger.itu</p>
-                <p>Ituzaingó, Buenos Aires.</p>
-            </div>
+    <footer class="row align-items-center">
+        <div class="col boom ">
+            Boom Burger
         </div>
-    </footer>
-    <!--finaliza el footer-->
+        <div class="col">
+            <a href="https://wa.link/d1zd1e"><img src="../img/whatsapp.png" alt="logo WhatsApp"></a>
+            <a href="https://www.instagram.com/boomburger.itu/?hl=es-la"><img src="../img/instagram.png"></a>
+            <a href="https://www.facebook.com/boomburger.itu"><img src="../img/facebook.png"></a>
+        </div>
+        <div class="col footerDatos">
+            <p>11-2289-3830</p>
+            <p>@boomburger.itu</p>
+            <p>Ituzaingó, Buenos Aires.</p>
+        </div>
+        </div>
+        <!--finaliza el footer-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

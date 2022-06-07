@@ -24,7 +24,6 @@ body {
 nav {
     padding-top: 0% !important;
     padding-bottom: 0 !important;
-    
 }
 
 
@@ -32,13 +31,11 @@ nav {
 .detallesNav {
     border-bottom: 2px black solid;
     background-color: #c71916;
-    ;
 }
 
 .detallesNav img {
     width: 20%;
     height: 27%;
-
 }
 
 .nav-item {
@@ -66,8 +63,8 @@ footer {
 }
 
 footer a img {
-    width: 27%;
-    height: 40%;
+    width: 15%;
+    height: 30%;
     display: inline;
     padding: .2px;
     align-items: center;
@@ -120,10 +117,51 @@ main .col{
 }
 
 
+
+/* pagina promociones */
+.tarjetasPromos{
+    padding: 5px;
+}
+
+.tarjetasPromos img{
+    padding: 3px;
+    
+}
+
+.tarjetasPromos img:hover{
+    transform:translate(0 , 25px);
+    transition: all 1s;
+}
+
+.tarjetasPromos h5{
+    font-size: xx-large;
+}
+
+.tarjetasPromos p{
+    font-size: xx-small;
+}
+
+/* pagina novedades */
+.novedades img{
+    padding: 5px;
+}
+
+.tarjetasNovedades{
+    padding: 5px;
+    
+}
+
+
+/*pagina contacto */
+.formulario{
+
+
+}
+
 @media screen and (min-width: 768px){
     footer a img {
-        width: 15%;
-        height: 30%;
+        width: 10%;
+        height: 25%;
     }
 
     .bienvenida p{
