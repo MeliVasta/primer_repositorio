@@ -1,0 +1,190 @@
+* {
+    margin-top: 0 !important;
+}
+
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url("../font/BebasNeue-Regular.ttf");
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: radial-gradient(#fbab60, #f88922 ) !important;
+}
+
+/* navegador + footer */
+/* navegador */
+
+
+
+nav {
+    padding-top: 0% !important;
+    padding-bottom: 0 !important;
+}
+
+
+
+.detallesNav {
+    border-bottom: 2px black solid;
+    background-color: #c71916;
+}
+
+.detallesNav img {
+    width: 20%;
+    height: 27%;
+}
+
+.nav-item {
+    color: white;
+}
+
+
+
+/* fin nav*/
+
+
+/* footer */
+
+footer {
+    background-color: #c71916;
+    color: white;
+    font-family: "BebasNeue-Regular";
+    letter-spacing: 1px;
+    border-top: 2px black solid;
+}
+
+.boom {
+    font-weight: bolder;
+    margin-left: 2px;
+}
+
+footer a img {
+    width: 15%;
+    height: 30%;
+    display: inline;
+    padding: .2px;
+    align-items: center;
+}
+
+
+footer p {
+    text-align: right;
+    line-height: 1%;
+    font-size: xx-small;
+}
+
+.footerDtos {
+    padding: 1%;
+}
+
+/*fin footer*/
+
+/*mensaje bienvenida*/
+
+.bienvenida {
+    margin: 1px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.bienvenida button:hover{
+    transform: scale(1.5,1.5);
+    transition: all 1s;
+}
+/*fin mensaje bienvenida*/
+
+
+
+
+
+
+/*pagina menu */
+
+main{
+    padding: 1%;
+}
+
+main .col{
+    padding: 5%;
+}
+
+.bienvenida p{
+    font-size: 4rem;
+}
+
+
+
+/* pagina promociones */
+.tarjetasPromos{
+    padding: 5px;
+}
+
+.tarjetasPromos img{
+    padding: 3px;
+    
+}
+
+.tarjetasPromos img:hover{
+    transform:translate(0 , 25px);
+    transition: all 1s;
+}
+
+.tarjetasPromos h5{
+    font-size: xx-large;
+}
+
+.tarjetasPromos p{
+    font-size: xx-small;
+}
+
+/* pagina novedades */
+.novedades img{
+    padding: 5px;
+}
+
+.tarjetasNovedades{
+    padding: 5px;
+    
+}
+
+
+/*pagina contacto */
+.formulario{
+
+
+}
+
+@media screen and (min-width: 768px){
+    footer a img {
+        width: 10%;
+        height: 25%;
+    }
+
+    .bienvenida p{
+        font-size: 5rem;
+    }
+
+    main{
+        padding: 2%;
+    }
+    
+    main .col{
+        padding: 1%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    footer a img {
+        width: 7%;
+        height: 15%;
+    }
+
+    .bienvenida p{
+        font-size: 5rem;
+    }
+    
+}
