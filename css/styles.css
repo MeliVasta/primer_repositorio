@@ -1,0 +1,141 @@
+body {
+  overflow-x: hidden;
+  background-image: radial-gradient(#fbab60, #f88922); }
+
+/*navegador*/
+nav {
+  border-bottom: 2px black solid;
+  background-color: #A25114;
+  align-items: baseline;
+  width: 100vw; }
+  nav img {
+    width: 12%;
+    height: 17%;
+    display: inline; }
+  nav p {
+    font-size: 185%;
+    display: inline;
+    font-weight: 200%; }
+  nav li {
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: medium; }
+
+/*fin navegador/*
+
+
+/*footer*/
+footer {
+  background-color: #A25114;
+  color: white;
+  letter-spacing: 1px;
+  border-top: 2px black solid; }
+  footer .boom {
+    font-weight: bold;
+    margin-left: 2px;
+    font-size: 150%;
+    margin-left: 2.5%; }
+  footer a img {
+    widht: 10px;
+    height: 10px;
+    display: inline;
+    padding: .2px; }
+  footer .footerDatos {
+    margin: 1%; }
+  footer p {
+    text-align: right;
+    line-height: 1%;
+    font-size: xx-small; }
+  footer .footer {
+    margin-left: 12%; }
+
+/*fin footer*/
+/*index*/
+.carousel {
+  width: 100vw;
+  height: 50vh; }
+  .carousel img {
+    justify-content: center; }
+
+.bienvenida {
+  margin: 1px;
+  padding: 10px;
+  font-weight: bolder; }
+  .bienvenida button:hover {
+    transform: scale(1.5, 1.5);
+    transition: all 1s; }
+
+/*fin index*/
+/*menu*/
+main {
+  padding: 1%; }
+  main .col {
+    padding: 5%; }
+  main .bienvenida p {
+    font-size: 4rem; }
+  main img:hover {
+    transform: scale(1.5, 1.5);
+    transition: all 1s;
+    position: absolute; }
+  main .card {
+    background-color: #DDECEE;
+    color: #A25114; }
+
+/*fin menu*/
+/*promociones*/
+.tarjetasPromos {
+  padding: 5px; }
+  .tarjetasPromos img {
+    padding: 3px; }
+  .tarjetasPromos img:hover {
+    transform: translate(0, 25px);
+    transition: all 1s; }
+  .tarjetasPromos .card {
+    background-color: #DDECEE;
+    color: #A25114; }
+
+/*fin promociones*/
+/*novedades */
+.tarjetasNovedades {
+  padding: 5px; }
+  .tarjetasNovedades .novedades img {
+    padding: 5px; }
+  .tarjetasNovedades .card {
+    background-color: #DDECEE;
+    color: #A25114; }
+
+.flexible {
+  display: flex; }
+
+.btn--facebook {
+  background-color: #00acee; }
+
+.btn--instagram {
+  background-color: #dd2a7b; }
+
+/*fin novedades*/
+/*formulario*/
+.formulario {
+  align-items: center; }
+  .formulario .tituloFormulario {
+    padding: 5%; }
+
+@media screen and (min-width: 768px) {
+  footer a img {
+    width: 15%;
+    height: 25%; }
+  .bienvenida p {
+    font-size: 5rem; }
+  main {
+    padding: 2%; }
+  main .col {
+    padding: 1%; } }
+
+@media screen and (min-width: 992px) {
+  footer a img {
+    width: 11%;
+    height: 11%; }
+  .bienvenida p {
+    font-size: 5rem; }
+  .carousel {
+    height: 40vw; } }

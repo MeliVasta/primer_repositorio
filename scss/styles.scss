@@ -1,0 +1,255 @@
+@import 'navegador';
+@import 'variables';
+@import 'mixins';
+
+
+
+body {
+    overflow-x: hidden;
+    background-image: $body;
+}
+
+
+/*navegador*/
+nav {
+    border-bottom: $borde;
+    background-color: $fondo-nav;
+    align-items: baseline;
+    width: 100vw;
+
+
+    img {
+        width: 12%;
+        height: 17%;
+        display: $enlinea;
+    }
+
+    p {
+        font-size: 185%;
+        display: $enlinea;
+        font-weight: 200%;
+    }
+
+    li {
+        text-decoration: $li;
+        margin-left: 10px;
+        font-weight: medium;
+    }
+}
+
+/*fin navegador/*
+
+
+/*footer*/
+
+footer {
+    background-color: $fondo-nav;
+    color: $color-letras;
+    letter-spacing: 1px;
+    border-top: $borde;
+
+
+    .boom {
+        font-weight: bold;
+        margin-left: 2px;
+        font-size: 150%;
+        margin-left: 2.5%;
+    }
+
+    a img {
+        @include sizes(10px,10px);
+        display: inline;
+        padding: .2px;
+    }
+
+    .footerDatos {
+        margin: 1%;
+    }
+
+    p {
+        text-align: right;
+        line-height: 1%;
+        font-size: xx-small;
+    }
+
+    .footer {
+        margin-left: 12%;
+    }
+}
+
+/*fin footer*/
+
+
+/*index*/
+.carousel {
+    @if $size==sm{
+        width: 100vw;
+        height: 25vh;    
+    }
+
+    @else if $size==md{
+        width: 100vw;
+        height: 45vh
+    }
+
+    @else {
+        width: 100vw;
+        height: 50vh
+    }
+
+    img{
+        justify-content: center;
+    }
+}
+
+.bienvenida {
+    margin: 1px;
+    padding: 10px;
+    font-weight: bolder;
+
+    button:hover {
+        transform: scale(1.5, 1.5);
+        transition: all 1s;
+    }
+}
+
+/*fin index*/
+
+/*menu*/
+
+main {
+    padding: 1%;
+
+    .col {
+        padding: 5%;
+    }
+
+    .bienvenida p {
+        font-size: 4rem;
+    }
+
+    img:hover {
+        transform: scale(1.5, 1.5);
+        transition: all 1s;
+        position: absolute;
+    }
+
+    .card {
+        background-color: $card-bg;
+        color: $card-text;
+    }
+}
+
+/*fin menu*/
+
+
+/*promociones*/
+.tarjetasPromos {
+    padding: 5px;
+
+
+    img {
+        padding: 3px;
+
+    }
+
+    img:hover {
+        transform: translate(0, 25px);
+        transition: all 1s;
+    }
+
+    .card {
+        background-color: $card-bg;
+        color: $card-text;
+    }
+}
+
+/*fin promociones*/
+
+
+/*novedades */
+
+.tarjetasNovedades {
+    padding: 5px;
+
+    .novedades img {
+        padding: 5px;
+    }
+
+    .card{
+        background-color: $card-bg;
+        color: $card-text;
+    }
+}
+
+.flexible{
+    display: flex;
+}
+
+
+@each $red, $valor  in $color-redes {
+    .btn--#{$red}{
+        background-color: $valor;
+    }
+}
+
+
+
+
+/*fin novedades*/
+
+/*formulario*/
+
+.formulario{
+    align-items: center;
+
+    .tituloFormulario{
+        padding: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    footer a img {
+        width: 15%;
+        height: 25%;
+    }
+
+    .bienvenida p {
+        font-size: 5rem;
+    }
+
+    main {
+        padding: 2%;
+    }
+
+    main .col {
+        padding: 1%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    footer a img {
+        width: 11%;
+        height: 11%;
+    }
+
+    .bienvenida p {
+        font-size: 5rem;
+    }
+
+    .carousel {
+        height: 40vw;
+    }
+}

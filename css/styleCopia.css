@@ -133,13 +133,7 @@ main .col{
     transition: all 1s;
 }
 
-.tarjetasPromos h5{
-    font-size: xx-large;
-}
 
-.tarjetasPromos p{
-    font-size: xx-small;
-}
 
 /* pagina novedades */
 .novedades img{
@@ -153,10 +147,6 @@ main .col{
 
 
 /*pagina contacto */
-.formulario{
-
-
-}
 
 @media screen and (min-width: 768px){
     footer a img {

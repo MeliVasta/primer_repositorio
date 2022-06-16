@@ -1,0 +1,4 @@
+﻿En esta nueva actualización agregue:
+keywords como por ejemplo: Hamburguesa, Comida rápida, Combos comida, Comida, Amigos, Familia, Ituzaingo, Buenos Aires
+una description: Hamburgueseria y comida rapida ubicada en Ituzaingo, Buenos Aires
+los titulos de la pagina ya estaban agregados.
