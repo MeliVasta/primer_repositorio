@@ -13,9 +13,9 @@ nav {
     height: 17%;
     display: inline; }
   nav p {
-    font-size: 185%;
+    font-size: 200%;
     display: inline;
-    font-weight: 200%; }
+    font-weight: 300%; }
   nav li {
     text-decoration: none;
     margin-left: 10px;
@@ -52,8 +52,7 @@ footer {
 /*fin footer*/
 /*index*/
 .carousel {
-  width: 100vw;
-  height: 50vh; }
+  width: 100vw; }
   .carousel img {
     justify-content: center; }
 
@@ -69,6 +68,9 @@ footer {
 /*menu*/
 main {
   padding: 1%; }
+  main .detallesCards {
+    background-color: #A25114;
+    border: 2px black solid; }
   main .col {
     padding: 5%; }
   main .bienvenida p {
@@ -77,22 +79,19 @@ main {
     transform: scale(1.5, 1.5);
     transition: all 1s;
     position: absolute; }
-  main .card {
-    background-color: #DDECEE;
-    color: #A25114; }
 
 /*fin menu*/
 /*promociones*/
 .tarjetasPromos {
-  padding: 5px; }
+  padding: 10px; }
+  .tarjetasPromos .detallesCards {
+    background-color: #A25114;
+    border: 2px black solid; }
   .tarjetasPromos img {
     padding: 3px; }
   .tarjetasPromos img:hover {
     transform: translate(0, 25px);
     transition: all 1s; }
-  .tarjetasPromos .card {
-    background-color: #DDECEE;
-    color: #A25114; }
 
 /*fin promociones*/
 /*novedades */
@@ -100,9 +99,9 @@ main {
   padding: 5px; }
   .tarjetasNovedades .novedades img {
     padding: 5px; }
-  .tarjetasNovedades .card {
-    background-color: #DDECEE;
-    color: #A25114; }
+  .tarjetasNovedades .detallesCards {
+    background-color: #A25114;
+    border: 2px black solid; }
 
 .flexible {
   display: flex; }
@@ -115,10 +114,19 @@ main {
 
 /*fin novedades*/
 /*formulario*/
-.formulario {
-  align-items: center; }
-  .formulario .tituloFormulario {
-    padding: 5%; }
+.contacto .tituloFormulario {
+  margin-top: 2%; }
+
+.contacto .formulario {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #A25114;
+  border: 2px black solid;
+  margin: 8vh; }
+
+.contacto .boton {
+  margin: 2%; }
 
 @media screen and (min-width: 768px) {
   footer a img {

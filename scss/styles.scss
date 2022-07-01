@@ -25,10 +25,11 @@ nav {
     }
 
     p {
-        font-size: 185%;
+        font-size: 200%;
         display: $enlinea;
-        font-weight: 200%;
+        font-weight: 300%;
     }
+
 
     li {
         text-decoration: $li;
@@ -57,9 +58,10 @@ footer {
     }
 
     a img {
-        @include sizes(10px,10px);
+        @include sizes(10px, 10px);
         display: inline;
         padding: .2px;
+        
     }
 
     .footerDatos {
@@ -82,22 +84,19 @@ footer {
 
 /*index*/
 .carousel {
-    @if $size==sm{
+    @if $size==sm {
         width: 100vw;
-        height: 25vh;    
     }
 
-    @else if $size==md{
+    @else if $size==md {
         width: 100vw;
-        height: 45vh
     }
 
     @else {
         width: 100vw;
-        height: 50vh
     }
 
-    img{
+    img {
         justify-content: center;
     }
 }
@@ -120,6 +119,11 @@ footer {
 main {
     padding: 1%;
 
+    .detallesCards {
+        background-color: $fondo-nav;
+        border: $borde;
+    }
+
     .col {
         padding: 5%;
     }
@@ -134,10 +138,7 @@ main {
         position: absolute;
     }
 
-    .card {
-        background-color: $card-bg;
-        color: $card-text;
-    }
+
 }
 
 /*fin menu*/
@@ -145,8 +146,12 @@ main {
 
 /*promociones*/
 .tarjetasPromos {
-    padding: 5px;
+    padding: 10px;
 
+    .detallesCards {
+        background-color: $fondo-nav;
+        border: $borde;
+    }
 
     img {
         padding: 3px;
@@ -156,11 +161,6 @@ main {
     img:hover {
         transform: translate(0, 25px);
         transition: all 1s;
-    }
-
-    .card {
-        background-color: $card-bg;
-        color: $card-text;
     }
 }
 
@@ -176,19 +176,20 @@ main {
         padding: 5px;
     }
 
-    .card{
-        background-color: $card-bg;
-        color: $card-text;
+    .detallesCards {
+        background-color: $fondo-nav;
+        border: $borde;
     }
 }
 
-.flexible{
+.flexible {
     display: flex;
 }
 
 
-@each $red, $valor  in $color-redes {
-    .btn--#{$red}{
+@each $red,
+$valor in $color-redes {
+    .btn--#{$red} {
         background-color: $valor;
     }
 }
@@ -199,16 +200,25 @@ main {
 /*fin novedades*/
 
 /*formulario*/
-
-.formulario{
-    align-items: center;
+.contacto{
 
     .tituloFormulario{
-        padding: 5%;
+        margin-top: 2%;
     }
 
+.formulario {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: $fondo-nav;
+    border: $borde;
+    margin: 8vh;
 }
 
+.boton{
+    margin: 2%;
+}
+}
 
 
 
