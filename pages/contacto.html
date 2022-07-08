@@ -12,12 +12,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="container-fluid">
     <header>
         <!--navegador-->
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid detallesNav align-items-left">
-                <a class="navbar-brand text-light" href="../index.html">
+            <div class="container-fluid detallesNav">
+                <a class="navbar-brand text-light d-inline col-8" href="../index.html">
                     <img src="../img/logo-boom.png" alt="Logo Boom Burger" class="d-inline-block align-text-center">
                     <p>Boom Burger</p>
                 </a>
@@ -25,16 +25,17 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse col-4" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="../pages/menu.html">Menu</a>
+                            <a class="nav-link active text-light" aria-current="page"
+                                href="./menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="../pages/promociones.html">Promociones</a>
+                            <a class="nav-link text-light" href="./promociones.html">Promociones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="../pages/novedades.html">Novedades</a>
+                            <a class="nav-link text-light" href="./novedades.html">Novedades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#">Contacto</a>
@@ -45,6 +46,7 @@
         </nav>
     </header>
     <!--fin navegador-->
+
 
     <!-- comienza formulario-->
     <section class="contacto">
@@ -91,23 +93,22 @@
 
 
 
-        <!--comienza footer-->
-        <footer class="row align-items-center">
-            <div class="col boom">
-                Boom Burger
-            </div>
-            <div class="col footer">
-                <a href="https://wa.link/d1zd1e"><img src="../img/whatsapp.png" alt="logo WhatsApp"></a>
-                <a href="https://www.instagram.com/boomburger.itu/?hl=es-la"><img src="../img/instagram.png"></a>
-                <a href="https://www.facebook.com/boomburger.itu"><img src="../img/facebook.png"></a>
-            </div>
-            <div class="col footerDatos">
-                <p>11-2289-3830</p>
-                <p>@boomburger.itu</p>
-                <p>Ituzaingó, Buenos Aires.</p>
-            </div>
-            </div>
-            <!--finaliza footer-->
+            <!--comienza footer-->
+            <footer class="row align-items-center">
+                <div class="col boom">
+                    Boom Burger
+                </div>
+                <div class="col footer">
+                    <a href="https://wa.link/d1zd1e"><img src="../img/whatsapp.png" alt="logo WhatsApp"></a>
+                    <a href="https://www.instagram.com/boomburger.itu/?hl=es-la"><img src="../img/instagram.png"></a>
+                    <a href="https://www.facebook.com/boomburger.itu"><img src="../img/facebook.png"></a>
+                </div>
+                <div class="col footerDatos">
+                    <p>11-2289-3830</p>
+                    <p>@boomburger.itu</p>
+                    <p class="separacion">Ituzaingó, Buenos Aires.</p>
+                </div>
+                <!--finaliza footer-->
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -1,29 +1,28 @@
 body {
   background-image: radial-gradient(#fbab60, #f88922); }
 
-/*navegador*/
+/* navegador */
 nav {
   border-bottom: 2px black solid;
-  background-color: #A25114;
-  align-items: baseline;
-  width: 100vw; }
+  background-color: #A25114; }
   nav img {
-    width: 12%;
-    height: 17%;
-    display: inline; }
+    width: 30%;
+    height: 90%;
+    text-align: right; }
   nav p {
-    font-size: 200%;
+    font-size: 150%;
     display: inline;
-    font-weight: 300%; }
+    font-weight: bold; }
+  nav button {
+    margin-top: 2%;
+    padding: 1%; }
   nav li {
     text-decoration: none;
-    margin-left: 10px;
-    font-weight: medium; }
+    font-weight: bolder;
+    display: inline; }
 
-/*fin navegador/*
-
-
-/*footer*/
+/* fin navegador */
+/* footer */
 footer {
   background-color: #A25114;
   color: white;
@@ -31,56 +30,67 @@ footer {
   border-top: 2px black solid; }
   footer .boom {
     font-weight: bold;
-    margin-left: 2px;
-    font-size: 150%;
-    margin-left: 2.5%; }
+    margin-left: 5px;
+    margin-bottom: 5px;
+    line-height: 100%;
+    font-size: 150%; }
   footer a img {
-    widht: 10px;
-    height: 10px;
+    widht: 20px;
+    height: 20px;
     display: inline;
     padding: .2px; }
+  footer .footer {
+    margin-left: 7%;
+    padding: 0; }
   footer .footerDatos {
-    margin: 1%; }
+    margin-top: 5%; }
   footer p {
     text-align: right;
-    line-height: 1%;
-    font-size: xx-small; }
-  footer .footer {
-    margin-left: 12%; }
+    line-height: 10%;
+    font-size: small; }
+  footer .separacion {
+    line-height: 100%; }
 
-/*fin footer*/
-/*index*/
-.carousel {
+/* fin footer */
+/* index */
+.carouseL {
   width: 100vw; }
-  .carousel img {
+  .carouseL img {
     justify-content: center; }
 
 .bienvenida {
-  margin: 1px;
-  padding: 10px;
-  font-weight: bolder; }
-  .bienvenida button:hover {
-    transform: scale(1.5, 1.5);
-    transition: all 1s; }
+  margin: 15px;
+  padding: 20px;
+  font-weight: bolder;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+  .bienvenida p {
+    font-size: 325%; }
+  .bienvenida button {
+    margin-top: 5%; }
+  .bienvenida .botoneSlider {
+    display: flex;
+    justify-content: center; }
 
-/*fin index*/
-/*menu*/
+/* fin index */
+/* menu */
 main {
-  padding: 1%; }
+  padding: 5% 10%; }
+  main .bienvenidaMenu {
+    font-size: 100px; }
+  main .tituloCard {
+    font-size: 40px; }
   main .detallesCards {
     background-color: #A25114;
     border: 2px black solid; }
   main .col {
-    padding: 5%; }
-  main .bienvenida p {
-    font-size: 4rem; }
-  main img:hover {
-    transform: scale(1.5, 1.5);
-    transition: all 1s;
-    position: absolute; }
+    padding-top: 6%; }
+  main .font {
+    font-size: 30px; }
 
-/*fin menu*/
-/*promociones*/
+/* fin menu */
+/* promociones */
 .tarjetasPromos {
   padding: 10px; }
   .tarjetasPromos .detallesCards {
@@ -92,8 +102,8 @@ main {
     transform: translate(0, 25px);
     transition: all 1s; }
 
-/*fin promociones*/
-/*novedades */
+/* fin promociones */
+/* novedades */
 .tarjetasNovedades {
   padding: 5px; }
   .tarjetasNovedades .novedades img {
@@ -111,8 +121,8 @@ main {
 .btn--instagram {
   background-color: #dd2a7b; }
 
-/*fin novedades*/
-/*formulario*/
+/* fin novedades */
+/* formulario */
 .contacto .tituloFormulario {
   margin-top: 2%; }
 
@@ -127,22 +137,126 @@ main {
 .contacto .boton {
   margin: 2%; }
 
+/* breakpoints */
 @media screen and (min-width: 768px) {
+  /*navegador */
+  .nav {
+    display: flex; }
+    .nav img {
+      width: 20%;
+      height: 90%;
+      margin-bottom: 2%; }
+    .nav p {
+      font-size: 150%;
+      font-weight: bold; }
+    .nav button {
+      width: 10vw;
+      height: 10vh;
+      margin-top: 5vw; }
+    .nav .liItems {
+      justify-content: left; }
+    .nav li {
+      text-decoration: none;
+      font-weight: medium; }
+  /*fin nav */
+  /* footer*/
+  footer .boom {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    line-height: 90%;
+    font-size: 250%; }
   footer a img {
-    width: 15%;
-    height: 25%; }
+    widht: 40px;
+    height: 40px;
+    display: inline;
+    padding: .2px; }
+  footer .footer {
+    margin-left: 12%; }
+  footer .footerDatos {
+    margin-top: 2.5%;
+    margin-right: 2%; }
+  /* footer */
+  /* pagina index */
   .bienvenida p {
     font-size: 5rem; }
+  .bienvenida p {
+    font-size: 600%; }
+  .bienvenida button:hover {
+    transform: scale(1.5, 1.5);
+    transition: all 1s; }
+  /* fin pagina index */
   main {
-    padding: 2%; }
-  main .col {
-    padding: 1%; } }
+    padding: 5%; }
+    main .detallesCards {
+      background-color: #A25114;
+      border: 2px black solid; }
+    main .font {
+      font-size: 22px; }
+    main button:hover {
+      transform: scale(1.5, 1.5);
+      transition: all 1s; }
+  /* fin pagina menu */ }
 
 @media screen and (min-width: 992px) {
+  /* navegador */
+  .nav {
+    display: inline;
+    align-items: center;
+    margin: 0;
+    height: 20vh; }
+    .nav img {
+      width: 30%;
+      height: 100%;
+      margin-bottom: 5vh; }
+    .nav p {
+      font-size: 500%; }
+    .nav .liItems {
+      display: flex;
+      justify-content: right;
+      justify-content: space-around;
+      margin-bottom: 3.5vh; }
+    .nav li {
+      font-size: 125%; }
+  /* fin navegador */
+  /* footer */
+  footer .boom {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    line-height: 90%;
+    font-size: 250%; }
   footer a img {
-    width: 11%;
-    height: 11%; }
-  .bienvenida p {
-    font-size: 5rem; }
-  .carousel {
-    height: 40vw; } }
+    widht: 40px;
+    height: 40px;
+    display: inline;
+    padding: .2px; }
+  footer .footer {
+    margin-left: 12%; }
+  footer .footerDatos {
+    margin-top: 2.5%;
+    margin-right: 2%; }
+  /* fin footer */
+  /* pagina index */
+  .bienvenida {
+    font-weight: bolder;
+    display: flex;
+    text-align: center;
+    justify-content: center; }
+    .bienvenida p {
+      font-size: 500%; }
+    .bienvenida button:hover {
+      transform: scale(1.5, 1.5);
+      transition: all 1s; }
+  /* fin pagina index */
+  /* pagina menu */
+  main {
+    padding: 5%; }
+    main .detallesCards {
+      background-color: #A25114;
+      border: 2px black solid; }
+    main .tituloCard {
+      font-size: 40px; }
+    main .font {
+      font-size: 15px; }
+    main .bienvenida p {
+      font-size: 4rem; }
+  /* fin pagina menu */ }

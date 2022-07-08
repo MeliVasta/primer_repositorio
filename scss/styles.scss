@@ -3,44 +3,45 @@
 @import 'mixins';
 
 
-
 body {
     background-image: $body;
 }
 
 
-/*navegador*/
+/* navegador */
 nav {
     border-bottom: $borde;
     background-color: $fondo-nav;
-    align-items: baseline;
-    width: 100vw;
 
 
     img {
-        width: 12%;
-        height: 17%;
-        display: $enlinea;
+        width: 30%;
+        height: 90%;
+        text-align: right;
     }
 
     p {
-        font-size: 200%;
+        font-size: 150%;
         display: $enlinea;
-        font-weight: 300%;
+        font-weight: bold;
     }
 
+    button{
+        margin-top: 2%;
+        padding: 1%;
+    }
 
     li {
         text-decoration: $li;
-        margin-left: 10px;
-        font-weight: medium;
+        font-weight: bolder;
+        display: $enlinea;
     }
 }
 
-/*fin navegador/*
+/* fin navegador */
 
 
-/*footer*/
+/* footer */
 
 footer {
     background-color: $fondo-nav;
@@ -49,40 +50,47 @@ footer {
     border-top: $borde;
 
 
+
     .boom {
         font-weight: bold;
-        margin-left: 2px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        line-height: 100%;
         font-size: 150%;
-        margin-left: 2.5%;
     }
 
     a img {
-        @include sizes(10px, 10px);
+        @include sizes(20px, 20px);
         display: inline;
         padding: .2px;
-        
+    }
+
+    .footer {
+        margin-left: 7%;
+        padding: 0;
     }
 
     .footerDatos {
-        margin: 1%;
+        margin-top: 5%;
     }
 
     p {
         text-align: right;
-        line-height: 1%;
-        font-size: xx-small;
+        line-height: 10%;
+        font-size: small;
     }
 
-    .footer {
-        margin-left: 12%;
+    .separacion {
+        line-height: 100%;
     }
 }
 
-/*fin footer*/
+/* fin footer */
 
 
-/*index*/
-.carousel {
+/* index */
+
+.carouseL {
     @if $size==sm {
         width: 100vw;
     }
@@ -101,22 +109,41 @@ footer {
 }
 
 .bienvenida {
-    margin: 1px;
-    padding: 10px;
+    margin: 15px;
+    padding: 20px;
     font-weight: bolder;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 
-    button:hover {
-        transform: scale(1.5, 1.5);
-        transition: all 1s;
+    p {
+        font-size: 325%;
+    }
+
+    button {
+        margin-top: 5%;
+    }
+
+    .botoneSlider{
+        display: flex;
+        justify-content: center;
     }
 }
 
-/*fin index*/
+/* fin index */
 
-/*menu*/
+/* menu */
 
 main {
-    padding: 1%;
+    padding: 5% 10%;
+
+    .bienvenidaMenu{
+        font-size: 100px;
+    }
+
+    .tituloCard{
+        font-size: 40px;
+    }
 
     .detallesCards {
         background-color: $fondo-nav;
@@ -124,26 +151,19 @@ main {
     }
 
     .col {
-        padding: 5%;
+        padding-top: 6%;
     }
 
-    .bienvenida p {
-        font-size: 4rem;
+    .font{
+        font-size: 30px;
     }
-
-    img:hover {
-        transform: scale(1.5, 1.5);
-        transition: all 1s;
-        position: absolute;
-    }
-
-
 }
 
-/*fin menu*/
+/* fin menu */
 
 
-/*promociones*/
+/* promociones */
+
 .tarjetasPromos {
     padding: 10px;
 
@@ -154,7 +174,6 @@ main {
 
     img {
         padding: 3px;
-
     }
 
     img:hover {
@@ -163,10 +182,10 @@ main {
     }
 }
 
-/*fin promociones*/
+/* fin promociones */
 
 
-/*novedades */
+/* novedades */
 
 .tarjetasNovedades {
     padding: 5px;
@@ -196,28 +215,30 @@ $valor in $color-redes {
 
 
 
-/*fin novedades*/
+/* fin novedades */
 
-/*formulario*/
-.contacto{
+/* formulario */
 
-    .tituloFormulario{
+.contacto {
+
+    .tituloFormulario {
         margin-top: 2%;
     }
 
-.formulario {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: $fondo-nav;
-    border: $borde;
-    margin: 8vh;
+    .formulario {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: $fondo-nav;
+        border: $borde;
+        margin: 8vh;
+    }
+
+    .boton {
+        margin: 2%;
+    }
 }
 
-.boton{
-    margin: 2%;
-}
-}
 
 
 
@@ -225,40 +246,219 @@ $valor in $color-redes {
 
 
 
-
-
+/* breakpoints */
 
 
 @media screen and (min-width: 768px) {
-    footer a img {
-        width: 15%;
-        height: 25%;
-    }
 
+/*navegador */
+    .nav {
+        display: flex;
+
+        img {
+            width: 20%;
+            height: 90%;
+            margin-bottom: 2%;
+        }
+
+        p {
+            font-size: 150%;
+            font-weight: bold;
+        }
+
+        button {
+            width: 10vw;
+            height: 10vh;
+            margin-top: 5vw;
+        }
+
+        .liItems {
+            justify-content: left;
+        }
+
+        li {
+            text-decoration: $li;
+            font-weight: medium;
+        }
+    }
+/*fin nav */
+
+/* footer*/
+    footer {
+        .boom {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            line-height: 90%;
+            font-size: 250%;
+        }
+
+        a img {
+            @include sizes(40px, 40px);
+            display: inline;
+            padding: .2px;
+        }
+
+        .footer {
+            margin-left: 12%;
+        }
+
+        .footerDatos {
+            margin-top: 2.5%;
+            margin-right: 2%;
+        }
+    }
+/* footer */
+
+/* pagina index */
     .bienvenida p {
         font-size: 5rem;
     }
 
-    main {
-        padding: 2%;
+    .bienvenida {
+
+        p {
+            font-size: 600%;
+        }
+
+        button:hover {
+            transform: scale(1.5, 1.5);
+            transition: all 1s;
+        }
+    }
+/* fin pagina index */
+
+main {
+    padding: 5%;
+
+    .detallesCards {
+        background-color: $fondo-nav;
+        border: $borde;
     }
 
-    main .col {
-        padding: 1%;
+    .font{
+        font-size: 22px;
+    }
+
+    button:hover {
+        transform: scale(1.5, 1.5);
+        transition: all 1s;
     }
 }
 
+/* fin pagina menu */
+
+}
+
+
 @media screen and (min-width: 992px) {
-    footer a img {
-        width: 11%;
-        height: 11%;
+    /* navegador */
+    .nav {
+        display: inline;
+        align-items: center;
+        margin: 0;
+        height: 20vh;
+
+        img {
+            width: 30%;
+            height: 100%;
+            margin-bottom: 5vh;
+        }
+
+        p {
+            font-size: 500%;
+        }
+
+
+        .liItems {
+            display: flex;
+            justify-content: right;
+            justify-content: space-around;
+            margin-bottom: 3.5vh;
+        }
+
+        li {
+            font-size: 125%;
+            
+        }
     }
 
-    .bienvenida p {
-        font-size: 5rem;
+    /* fin navegador */
+
+    /* footer */
+
+    footer {
+
+        .boom {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            line-height: 90%;
+            font-size: 250%;
+        }
+
+        a img {
+            @include sizes(40px, 40px);
+            display: inline;
+            padding: .2px;
+        }
+
+        .footer {
+            margin-left: 12%;
+        }
+
+        .footerDatos {
+            margin-top: 2.5%;
+            margin-right: 2%;
+        }
     }
 
-    .carousel {
-        height: 40vw;
+    /* fin footer */
+
+    /* pagina index */
+
+    .bienvenida {
+        font-weight: bolder;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    
+        p {
+            font-size: 500%;
+        }
+    
+    
+        button:hover {
+            transform: scale(1.5, 1.5);
+            transition: all 1s;
+        }
     }
+    
+
+    /* fin pagina index */
+
+    /* pagina menu */
+
+    main {
+        padding: 5%;
+    
+        .detallesCards {
+            background-color: $fondo-nav;
+            border: $borde;
+        }
+
+        .tituloCard{
+            font-size: 40px;
+        }
+        .font{
+            font-size: 15px;
+        }
+    
+        .bienvenida p {
+            font-size: 4rem;
+        }
+    
+
+    }
+
+    /* fin pagina menu */
+
 }
