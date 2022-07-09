@@ -1,16 +1,19 @@
 body {
-  background-image: radial-gradient(#fbab60, #f88922); }
+  background-image: radial-gradient(#fbab60, #f88922);
+  padding: 0% !important; }
 
 /* navegador */
 nav {
   border-bottom: 2px black solid;
   background-color: #A25114; }
-  nav img {
-    width: 30%;
-    height: 90%;
-    text-align: right; }
+  nav .logo {
+    text-align: left; }
+  nav .logo img {
+    widht: 60px;
+    height: 60px;
+    padding-bottom: 1%; }
   nav p {
-    font-size: 150%;
+    font-size: 125%;
     display: inline;
     font-weight: bold; }
   nav button {
@@ -27,23 +30,22 @@ footer {
   background-color: #A25114;
   color: white;
   letter-spacing: 1px;
-  border-top: 2px black solid; }
+  border-top: 2px black solid;
+  align-items: center; }
   footer .boom {
     font-weight: bold;
-    margin-left: 5px;
-    margin-bottom: 5px;
     line-height: 100%;
-    font-size: 150%; }
+    margin: 0 !important; }
+  footer .footer {
+    margin-left: 10%; }
   footer a img {
     widht: 20px;
     height: 20px;
     display: inline;
     padding: .2px; }
-  footer .footer {
-    margin-left: 7%;
-    padding: 0; }
   footer .footerDatos {
-    margin-top: 5%; }
+    margin-top: 6%;
+    padding-right: 2%; }
   footer p {
     text-align: right;
     line-height: 10%;
@@ -53,14 +55,8 @@ footer {
 
 /* fin footer */
 /* index */
-.carouseL {
-  width: 100vw; }
-  .carouseL img {
-    justify-content: center; }
-
 .bienvenida {
-  margin: 15px;
-  padding: 20px;
+  margin: 10px;
   font-weight: bolder;
   display: flex;
   text-align: center;
@@ -101,24 +97,25 @@ main {
   .tarjetasPromos img:hover {
     transform: translate(0, 25px);
     transition: all 1s; }
+  .tarjetasPromos button {
+    margin: 2%; }
 
 /* fin promociones */
 /* novedades */
-.tarjetasNovedades {
+.tarjetasNovedades img {
   padding: 5px; }
-  .tarjetasNovedades .novedades img {
-    padding: 5px; }
-  .tarjetasNovedades .detallesCards {
-    background-color: #A25114;
-    border: 2px black solid; }
 
-.flexible {
-  display: flex; }
+.tarjetasNovedades .detallesCards {
+  background-color: #A25114;
+  border: 2px black solid; }
 
-.btn--facebook {
+.tarjetasNovedades .col {
+  padding: 2% 5%; }
+
+.tarjetasNovedades .btn--facebook {
   background-color: #00acee; }
 
-.btn--instagram {
+.tarjetasNovedades .btn--instagram {
   background-color: #dd2a7b; }
 
 /* fin novedades */
@@ -142,10 +139,6 @@ main {
   /*navegador */
   .nav {
     display: flex; }
-    .nav img {
-      width: 20%;
-      height: 90%;
-      margin-bottom: 2%; }
     .nav p {
       font-size: 150%;
       font-weight: bold; }
@@ -162,28 +155,30 @@ main {
   /* footer*/
   footer .boom {
     margin-left: 10px;
-    margin-bottom: 10px;
     line-height: 90%;
-    font-size: 250%; }
+    font-size: 270%;
+    padding: 1%; }
   footer a img {
     widht: 40px;
     height: 40px;
     display: inline;
     padding: .2px; }
   footer .footer {
-    margin-left: 12%; }
+    margin-left: 10%; }
   footer .footerDatos {
-    margin-top: 2.5%;
-    margin-right: 2%; }
-  /* footer */
+    margin-top: .8%; }
+  /* fin footer */
   /* pagina index */
-  .bienvenida p {
-    font-size: 5rem; }
-  .bienvenida p {
-    font-size: 600%; }
-  .bienvenida button:hover {
-    transform: scale(1.5, 1.5);
-    transition: all 1s; }
+  .bienvenida {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    padding: 1%; }
+    .bienvenida p {
+      font-size: 600%; }
+    .bienvenida button:hover {
+      transform: scale(1.5, 1.5);
+      transition: all 1s; }
   /* fin pagina index */
   main {
     padding: 5%; }
@@ -198,16 +193,13 @@ main {
   /* fin pagina menu */ }
 
 @media screen and (min-width: 992px) {
+  * button:hover {
+    transform: scale(1.5, 1.5);
+    transition: all 1s; }
   /* navegador */
   .nav {
     display: inline;
-    align-items: center;
-    margin: 0;
-    height: 20vh; }
-    .nav img {
-      width: 30%;
-      height: 100%;
-      margin-bottom: 5vh; }
+    align-items: center; }
     .nav p {
       font-size: 500%; }
     .nav .liItems {
@@ -219,21 +211,28 @@ main {
       font-size: 125%; }
   /* fin navegador */
   /* footer */
-  footer .boom {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    line-height: 90%;
-    font-size: 250%; }
-  footer a img {
-    widht: 40px;
-    height: 40px;
-    display: inline;
-    padding: .2px; }
-  footer .footer {
-    margin-left: 12%; }
-  footer .footerDatos {
-    margin-top: 2.5%;
-    margin-right: 2%; }
+  footer {
+    width: 100vw;
+    height: 12vw;
+    margin: 0 !important;
+    padding: 1%; }
+    footer .boom {
+      margin-right: 10px;
+      font-size: 300%;
+      padding: 1%; }
+    footer a img {
+      widht: 50px;
+      height: 50px;
+      display: inline;
+      padding: .2px; }
+    footer .footer {
+      margin-left: 12%; }
+    footer .footerDatos {
+      margin: .3% 1%;
+      padding: 0%; }
+    footer p {
+      font-size: 12pt;
+      padding: 1%; }
   /* fin footer */
   /* pagina index */
   .bienvenida {
@@ -259,4 +258,8 @@ main {
       font-size: 15px; }
     main .bienvenida p {
       font-size: 4rem; }
-  /* fin pagina menu */ }
+  /* fin pagina menu */
+  /* pagina novedades */
+  .tarjetasNovedades .col {
+    padding: .1% 3%; }
+  /* fin pagina novedades */ }
