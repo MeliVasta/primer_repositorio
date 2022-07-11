@@ -1,0 +1,83 @@
+[33mcommit 16699134d6a95f9ee3ccf98c0ed62e0ecb99e808[m[33m ([m[1;36mHEAD -> [m[1;32mrama_cierre[m[33m)[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Mon Jul 11 18:26:11 2022 -0300
+
+    correcion slider, solo falta scroll horizontal
+
+[33mcommit 8800c03c41c702d260aa6febbaddecd5b06fa767[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Sat Jul 9 15:33:31 2022 -0300
+
+    correccion logo pagina menu
+
+[33mcommit aa42f1091263c3ccf5a587277180bbbd2768720e[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Sat Jul 9 15:29:48 2022 -0300
+
+    error al merger rama_correc, aplique git add . directo sobre la rama master
+
+[33mcommit 19a1b5d9433d9ffa9379640b1f424cc75f5dc0d1[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Fri Jul 8 17:44:06 2022 -0300
+
+    ya falta menos
+
+[33mcommit 5931efb098d3bb7ad3789738f237696d540527ba[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Fri Jul 8 14:24:38 2022 -0300
+
+    correcion rutas
+
+[33mcommit 2970849a4b1b7c78246bcca69a7acc82483e485c[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Fri Jul 8 14:22:05 2022 -0300
+
+    correciones finales, falta corregir overflow
+
+[33mcommit 74ba8e2d5f9d56ab3e8a70a02613c415d3800b65[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Fri Jul 1 16:51:12 2022 -0300
+
+    Correccion final final
+
+[33mcommit de49dd59fd519b241dba23235289ed72bbf997c9[m[33m ([m[1;31morigin/rama_scss[m[33m, [m[1;32mrama_scss[m[33m, [m[1;32mrama_final2[m[33m)[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Thu Jun 16 17:09:08 2022 -0300
+
+    Agregado scss a mi proyecto + SEO
+
+[33mcommit b0e4faa80c14b44414e8dca668325fc7de366406[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Fri Jun 10 14:53:22 2022 -0300
+
+    subido archivos
+
+[33mcommit e6786e3e058a6df018f77a6ec4e9ed80c1523307[m[33m ([m[1;32mrama_scss2[m[33m, [m[1;32mrama_bs2[m[33m)[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Tue Jun 7 20:16:07 2022 -0300
+
+    Creada estructura bs en promociones y novedades, correcion de rutas
+
+[33mcommit 441dafdddac10ee41358dc3f4df670edd7040790[m[33m ([m[1;32mcoreccion_fotoslider[m[33m)[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Thu Jun 2 17:44:46 2022 -0300
+
+    aplicado BS a ondex. html y menu
+
+[33mcommit e581e73cca5519c701bf0b0be6ff818953f61b00[m[33m ([m[1;32mrama_ani[m[33m, [m[1;32mcorreccion_fotoslider[m[33m)[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Tue May 31 21:49:36 2022 -0300
+
+    Agregado tranformaciones y cambio de ruta en foto slider
+
+[33mcommit 3fbb3466049bc120547c1597464fc4b32be9ab55[m[33m ([m[1;32mrama_seg[m[33m, [m[1;32mnueva_rama[m[33m)[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Tue May 31 15:55:46 2022 -0300
+
+    Agregado Boostrap en index.html
+
+[33mcommit 29854e691fc69c64625a6cb508755d1fe4a679a3[m
+Author: Melina Vasta <meli.vasta1@gmail.com>
+Date:   Thu May 26 14:24:40 2022 -0300
+
+    Creada estructura pricipal del proyecto
